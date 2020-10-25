@@ -1,0 +1,230 @@
+Microsoft Windows [Version 10.0.18363.1139]
+(c) 2019 Microsoft Corporation. All rights reserved.
+C:\Users\Suraj.Rahade\simplevat>docker info
+Client:
+ Debug Mode: false
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 19.03.13
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 8fba4e9a7d01810a393d5d25a3621dc101981175
+ runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd
+ init version: fec3683
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 4.19.128-microsoft-standard
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 8
+ Total Memory: 25.06GiB
+ Name: docker-desktop
+ ID: YONB:UUAW:TRCO:E6XR:NPQL:ZXIM:SVTT:L7MR:ZFF6:JR7C:BT2T:FMJF
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
+
+C:\Users\Suraj.Rahade\simplevat>docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+
+C:\Users\Suraj.Rahade\simplevat>docker pull mysql/mysql-server
+Using default tag: latest
+latest: Pulling from mysql/mysql-server
+Digest: sha256:5dfceab2e53e7dac983168c5f5d611d9d8e85c3bee7297c24c931d77fbeeaac3
+Status: Image is up to date for mysql/mysql-server:latest
+docker.io/mysql/mysql-server:latest
+
+C:\Users\Suraj.Rahade\simplevat>docker images
+REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
+mysql/mysql-server   latest              c8552d79a138        5 days ago          405MB
+
+C:\Users\Suraj.Rahade\simplevat>docker pull busybox
+Using default tag: latest
+latest: Pulling from library/busybox
+Digest: sha256:a9286defaba7b3a519d585ba0e37d0b2cbee74ebfe590960b0b1d6a5e97d1e1d
+Status: Image is up to date for busybox:latest
+docker.io/library/busybox:latest
+
+C:\Users\Suraj.Rahade\simplevat>docker images
+REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
+mysql/mysql-server   latest              c8552d79a138        5 days ago          405MB
+busybox              latest              f0b02e9d092d        10 days ago         1.23MB
+
+C:\Users\Suraj.Rahade\simplevat>docker build . -t simplevat:latest
+[+] Building 2.3s (12/12) FINISHED
+ => [internal] load .dockerignore                                                                                                                        0.1s
+ => => transferring context: 2B                                                                                                                          0.0s
+ => [internal] load build definition from Dockerfile                                                                                                     0.1s
+ => => transferring dockerfile: 5.85kB                                                                                                                   0.0s
+ => [internal] load metadata for docker.io/library/openjdk:8-jdk-slim                                                                                    2.1s
+ => [internal] load build context                                                                                                                        0.1s
+ => => transferring context: 1.63kB                                                                                                                      0.0s
+ => CANCELED [1/8] FROM docker.io/library/openjdk:8-jdk-slim@sha256:d1419c079ceeee8f795880384be81ce942acabc484a2e86b7655800e26da1308                     0.1s
+ => => resolve docker.io/library/openjdk:8-jdk-slim@sha256:d1419c079ceeee8f795880384be81ce942acabc484a2e86b7655800e26da1308                              0.0s
+ => CACHED [2/8] RUN mkdir -p "/usr/local/tomcat"                                                                                                        0.0s
+ => CACHED [3/8] WORKDIR /usr/local/tomcat                                                                                                               0.0s
+ => CACHED [4/8] RUN set -eux;   savedAptMark="$(apt-mark showmanual)";  apt-get update;  apt-get install -y --no-install-recommends   gnupg dirmngr     0.0s
+ => CACHED [5/8] RUN rm -rf /usr/local/tomcat/conf/context.xml                                                                                           0.0s
+ => CACHED [6/8] COPY tomcat_home/conf/context.xml /usr/local/tomcat/conf/                                                                               0.0s
+ => CACHED [7/8] RUN set -e  && nativeLines="$(catalina.sh configtest 2>&1)"  && nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"  &&  0.0s
+ => ERROR [8/8] COPY /target/ROOT.war /usr/local/tomcat/webapps/                                                                                         0.0s
+------
+ > [8/8] COPY /target/ROOT.war /usr/local/tomcat/webapps/:
+------
+failed to solve with frontend dockerfile.v0: failed to build LLB: failed to compute cache key: "/target/ROOT.war" not found: not found
+====================================BUILD by MAVEN=========================
+C:\Users\Suraj.Rahade\simplevat>docker build . -t simplevat:latest
+[+] Building 13.4s (13/13) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                     0.1s
+ => => transferring dockerfile: 32B                                                                                                                      0.0s
+ => [internal] load .dockerignore                                                                                                                        0.1s
+ => => transferring context: 2B                                                                                                                          0.0s
+ => [internal] load metadata for docker.io/library/openjdk:8-jdk-slim                                                                                    2.2s
+ => [1/8] FROM docker.io/library/openjdk:8-jdk-slim@sha256:d1419c079ceeee8f795880384be81ce942acabc484a2e86b7655800e26da1308                              0.0s
+ => [internal] load build context                                                                                                                        7.8s
+ => => transferring context: 76.49MB                                                                                                                     7.8s
+ => CACHED [2/8] RUN mkdir -p "/usr/local/tomcat"                                                                                                        0.0s
+ => CACHED [3/8] WORKDIR /usr/local/tomcat                                                                                                               0.0s
+ => CACHED [4/8] RUN set -eux;   savedAptMark="$(apt-mark showmanual)";  apt-get update;  apt-get install -y --no-install-recommends   gnupg dirmngr     0.0s
+ => CACHED [5/8] RUN rm -rf /usr/local/tomcat/conf/context.xml                                                                                           0.0s
+ => CACHED [6/8] COPY tomcat_home/conf/context.xml /usr/local/tomcat/conf/                                                                               0.0s
+ => CACHED [7/8] RUN set -e  && nativeLines="$(catalina.sh configtest 2>&1)"  && nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"  &&  0.0s
+ => [8/8] COPY /target/ROOT.war /usr/local/tomcat/webapps/                                                                                               2.1s
+ => exporting to image                                                                                                                                   1.0s
+ => => exporting layers                                                                                                                                  0.8s
+ => => writing image sha256:e239f69e5797c47626db433f286d34a16dac2a20a27a521750697a5175d7aa3a                                                             0.0s
+ => => naming to docker.io/library/simplevat:latest                                                                                                      0.0s
+C:\Users\Suraj.Rahade\simplevat>
+C:\Users\Suraj.Rahade\simplevat>docker network create -d bridge simplevat-Suraj-network
+dbf9fa87f1e9162076bd64850d3c719a8faac14fd2b93c43f978e8e7952ca973
+
+C:\Users\Suraj.Rahade\simplevat>docker run --name mysql-Suraj --network simplevat-Suraj-network -e MYSQL_ROOT_PASSWORD=password -d mysql/mysql-server:latest
+77ce710cb400cde6e8d5d266c4f83a45111e4b3231bd72cee93b4249cce9472a
+
+C:\Users\Suraj.Rahade\simplevat>docker exec -it  mysql-Suraj -uroot -p
+OCI runtime exec failed: exec failed: container_linux.go:349: starting container process caused "exec: \"-uroot\": executable file not found in $PATH": unknow
+n
+
+C:\Users\Suraj.Rahade\simplevat>docker inspect simplevat-Suraj-network
+[
+    {
+        "Name": "simplevat-Suraj-network",
+        "Id": "dbf9fa87f1e9162076bd64850d3c719a8faac14fd2b93c43f978e8e7952ca973",
+        "Created": "2020-10-24T13:47:35.4418769Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.23.0.0/16",
+                    "Gateway": "172.23.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "77ce710cb400cde6e8d5d266c4f83a45111e4b3231bd72cee93b4249cce9472a": {
+                "Name": "mysql-Suraj",
+                "EndpointID": "8ff95922c08dc6d9286c2f528bf556aa780cda15e7c2a1abf7468c53cb9a318a",
+                "MacAddress": "02:42:ac:17:00:02",
+                "IPv4Address": "172.23.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+
+C:\Users\Suraj.Rahade\simplevat>docker exec -it mysql-Suraj mysql -uroot -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 454
+Server version: 8.0.22 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.16 sec)
+
+mysql>  create database simplevat_db_Suraj;
+Query OK, 1 row affected (0.08 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| simplevat_db_Suraj |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> CREATE USER 'Surajuser'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+Query OK, 0 rows affected (0.15 sec)
+
+mysql> grant all privileges on simplevat_db_Suraj.* to 'Surajuser'@'%';
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.05 sec)
+
+mysql>
+
+=========================================================================
+docker run -p 9095:8080 --env SIMPLEVAT_DB_HOST=mysql-Suraj --env SIMPLEVAT_DB=simplevat_db_Suraj --env SIMPLEVAT_DB_USER=Surajuser --env SIMPLEVAT_DB_PASSWORD=password --env SIMPLEVAT_HOST=http://simplevat-Suraj:9095/ --name simp
+levat-Suraj --network simplevat-Suraj-network simplevat:latest
