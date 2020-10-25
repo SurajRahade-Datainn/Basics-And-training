@@ -1,0 +1,183 @@
+Microsoft Windows [Version 10.0.17134.1304]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git>git clone https://github.com/surajrahade/git-practice.git
+Cloning into 'git-practice'...
+Username for 'https://github.com': surajrahde
+Password for 'https://surajrahde@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/surajrahade/git-practice.git/'
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git>git clone https://github.com/surajrahade/git-practice.git
+Cloning into 'git-practice'...
+Username for 'https://github.com': surajrahade
+Password for 'https://surajrahade@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/surajrahade/git-practice.git/'
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git>git clone https://github.com/surajrahade/git-practice.git
+Cloning into 'git-practice'...
+Username for 'https://github.com': surajrahade
+Password for 'https://surajrahade@github.com':
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (24/24), done.
+Receiving objects:  81% (116/145)
+Receiving objects: 100% (145/145), 27.01 KiB | 200.00 KiB/s, done.
+Resolving deltas: 100% (53/53), done.
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git>cd git
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5E34-9F37
+
+ Directory of C:\Users\WIN 10\OneDrive\Desktop\practice_git
+
+10/14/2020  09:52 AM    <DIR>          .
+10/14/2020  09:52 AM    <DIR>          ..
+10/14/2020  09:52 AM    <DIR>          git-practice
+               0 File(s)              0 bytes
+               3 Dir(s)  47,904,894,976 bytes free
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git>cd git-practice
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git remote -v
+origin  https://github.com/surajrahade/git-practice.git (fetch)
+origin  https://github.com/surajrahade/git-practice.git (push)
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git branch -a
+* master
+  remotes/origin/HEAD -> origin/master  remotes/origin/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git remote add upstream https://github.com/gulftranstech/git-practice.git
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git remote -v
+origin  https://github.com/surajrahade/git-practice.git (fetch)
+origin  https://github.com/surajrahade/git-practice.git (push)
+upstream        https://github.com/gulftranstech/git-practice.git (fetch)
+upstream        https://github.com/gulftranstech/git-practice.git (push)
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git fetch upstream
+Username for 'https://github.com': surajrahade
+Password for 'https://surajrahade@github.com':
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), 887 bytes | 4.00 KiB/s, done.
+From https://github.com/gulftranstech/git-practice
+ * [new branch]      master     -> upstream/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/upstream/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git checkout upstream/master
+Note: switching to 'upstream/master'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 9a9d6de Merge pull request #27 from mub123/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git branch -a
+* (HEAD detached at upstream/master)
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/upstream/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git checkout master
+Previous HEAD position was 9a9d6de Merge pull request #27 from mub123/master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/upstream/master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git push origin master
+Username for 'https://github.com': surajrahade
+Password for 'https://surajrahade@github.com':
+Everything up-to-date
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5E34-9F37
+
+ Directory of C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice
+
+10/14/2020  10:09 AM    <DIR>          .
+10/14/2020  10:09 AM    <DIR>          ..
+10/14/2020  09:52 AM               153 Australian.txt
+10/14/2020  10:09 AM                27 Bangladesh.txt
+10/14/2020  10:36 AM               228 India.txt
+10/14/2020  09:52 AM                87 Pakistan.txt
+10/14/2020  09:52 AM                38 README.md
+               5 File(s)            533 bytes
+               2 Dir(s)  47,945,371,648 bytes free
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   India.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git commit -m "i have made change in India file"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   India.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git add india.txt
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git commit -a -m "i have made change in India file"
+[master 30e5582] i have made change in India file
+ 1 file changed, 4 insertions(+)
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>git push origin master
+Username for 'https://github.com': surajrahade
+Password for 'https://surajrahade@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 120.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/surajrahade/git-practice.git
+   e6ed649..30e5582  master -> master
+
+C:\Users\WIN 10\OneDrive\Desktop\practice_git\git-practice>

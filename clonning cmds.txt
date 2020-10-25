@@ -1,0 +1,32 @@
+git clone User_URL
+
+cd repo_name
+dir
+
+git remote -v
+
+git branch -a
+
+git add remote upstream work_URL
+
+git branch -a 
+git fetch upstream
+git branch -a
+
+git checkout upstream/master
+git branch -a
+
+git checkout master
+git branch -a
+
+git push origin master
+
+dir
+git status
+
+git commit -m "msg"
+
+git add FILE_NAME
+git commit -a -m "msg"
+
+git push origin master
