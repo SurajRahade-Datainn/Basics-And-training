@@ -1,0 +1,171 @@
+C:\Users\Zain.Khan\workspace\simplevat>doskey /history
+docker pull mysql
+docker ls
+docker image ls
+docker run --name mysql-zain -e MYSQL_ROOT_PASSWORD=Gtt@123 -d mysql:latest
+docker ps
+docker run -it --network simplevat-network --rm mysql mysql -hmysql-zain -uroot -p
+docker run -it --rm mysql mysql -hmysql-zain -uroot -p
+docker network create -d bridge simplevat-bridge-network
+docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -uroot -p
+docker ps
+docker kill mysql-zain
+docker ps
+docker rm mysql-zain
+docker run --network simplevat-bridge-network --name mysql-zain -e MYSQL_ROOT_PASSWORD=Gtt@123 -d mysql:latest
+docker ps
+docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -uroot -p
+doskey /history
+
+
+
+
+
+docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -usimplevat_db_user -p
+docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -usimplevat_db_user -p
+
+
+
+C:\Users\Zain.Khan\workspace\simplevat>doskey /History
+docker build -f Dockerfile . -t simplevat:latest
+docker images ls
+docker images
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=mysql-zain --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --name simplevat simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=mysql-zain --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker ps
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker ps
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker ps
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker ps
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=aed78c17b26a --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PAS
+SWORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=aed78c17b26a --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PAS
+SWORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker network inspect simplevat-bridge-network
+docker inspect mysql-zain
+
+21-10-2020
+C:\Users\Zain.Khan\workspace\simplevat>doskey /history
+docker pull mysql
+docker run --name mysql-zain --network simplevat-bridge-network -e MYSQL_ROOT_PASSWORD=Gtt@123 -d mysql:latest
+docker ps
+docker kill simplevat-zain && rm simplevat-zain
+docker kill simplevat-zain && docker rm simplevat-zain
+ docker rm simplevat-zain
+docker images
+docker run -it --name busybox --network simplevat-bridge-network busybox bash
+docker container start busybox
+docker ps
+docker exec -it busybox bash
+docker run -it --network simplevat-bridge-network --rm mysql-zain mysql -hmysql-zain -uroot -p
+docker run -it --network simplevat-bridge-network --rm mysql mysql-zain -hmysql-zain -uroot -p
+docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -uroot -p
+docker run -p 8080:8080 --env SIMPLEVAT_DB_HOST=mysql-zain --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --env SIMPLEVAT_HOST=http://simplevat-zain:8080/ --network simplevat-bridge-network --name simplevat-zain simplevat:latest
+docker ps
+docker exec -it busybox bash
+docker inspect simplevat-bridge-network
+docker ps
+doskey /history
+docker ps
+docker run -p 9091:8080 --env SIMPLEVAT_DB_HOST=mysql --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWORD=S
+impleVat123$ --env SIMPLEVAT_HOST=http://simplevat-zain2:9091/ --network simplevat-bridge-network --name simplevat-zain2 simplevat:latest
+docker exec -it busybox bash
+docker run -p 9092:8080 --env SIMPLEVAT_DB_HOST=mysql --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_new_user --env SIMPLEVAT_DB_PASSWORD=
+SimpleVat123$ --env SIMPLEVAT_HOST=http://simplevat-zain3:9092/ --network simplevat-bridge-network --name simplevat-zain3 simplevat:latest
+doskey /history
+
+
+C:\Users\Zain.Khan\workspace\simplevat>doskey /history
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=mysql-zain --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --name simplevat simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=mysql-zain --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker ps
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker ps
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ simplevat:latest
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker ps
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=localhost --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSWO
+RD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker ps
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=aed78c17b26a --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PAS
+SWORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=aed78c17b26a --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PAS
+SWORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker network inspect simplevat-bridge-network
+docker inspect mysql-zain
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=172.18.0.2 --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker kill simplevat-zain
+docker rm simplevat-zain
+docker run -p 8080:8081 --env SIMPLEVAT_DB_HOST=172.18.0.2 --env SIMPLEVAT_DB=simplevat_db --env SIMPLEVAT_DB_USER=simplevat_db_user --env SIMPLEVAT_DB_PASSW
+ORD=Gtt@123 --name simplevat-zain --env SIMPLEVAT_HOST=http://localhost:8080/ --network simplevat-bridge-network simplevat:latest
+docker network ls
+docker network inspect
+docker network inspect simplevat-bridge-network
+docker ps
+docker exec -it simplevat-zain bash
+docker ps
+history
+doskey /History
+docker images
+docker run -p 8080:8080 --env SIMPLEVAT_DB_HOST=mysql --env SIMPLEVAT_DB=simplevat_db_zain --env SIMPLEVAT_DB_USER=simplevat_db_user_zain --env SIMPLEVAT_DB_
+PASSWORD=Gtt@123 --env SIMPLEVAT_HOST=http://simplevat-zain:8080/ --name simplevat-zain --network simplevat-bridge-network simplevat:latest
+docker network inspect
+docker network inspect simplevat-bridge-network
+docker images
+docker run -it --name busybox bash
+docker run -it --name busybox  busybox bash
+docker kill busybox && docker rm busybox
+ docker rm busybox
+docker run -it --name busybox  busybox bash
+docker kill busybox && docker rm busybox
+ docker rm busybox
+docker run -it --name busybox --network simplevat-bridge-network  busybox bash
+docker run -p 8080:8080 --env SIMPLEVAT_DB_HOST=mysql --env SIMPLEVAT_DB=simplevat_db_zain --env SIMPLEVAT_DB_USER=simplevat_db_user_zain --env SIMPLEVAT_DB_
+PASSWORD=Gtt@123 --env SIMPLEVAT_HOST=http://simplevat-zain:8080/ --name simplevat-zain --network simplevat-bridge-network simplevat:latest
+docker exec -it busybox  bash
+docker run -p 9090:8080 --env SIMPLEVAT_DB_HOST=mysql --env SIMPLEVAT_DB=simplevat_db_zain --env SIMPLEVAT_DB_USER=simplevat_db_user_zain --env SIMPLEVAT_DB_
+PASSWORD=Gtt@123 --env SIMPLEVAT_HOST=http://simplevat-zain1:9090/ --name simplevat-zain1 --network simplevat-bridge-network simplevat:latest
+docker ps
+doskey /history
+
+
+C:\Users\Zain.Khan\workspace\simplevat>doskey /history
+>docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -usimplevat_db_user -p
+docker run -it --network simplevat-bridge-network --rm mysql mysql -hmysql-zain -usimplevat_db_user -p
+doskey /history
+docker exec -it mysql mysql -usimplevat_db_user_zain -p
+docker ps
+docker kill simplevat-zain && docker rm simplevat-zain
+docker run -p 8080:8080 --env SIMPLEVAT_DB_HOST=mysql --env SIMPLEVAT_DB=simplevat_db_zain --env SIMPLEVAT_DB_USER=sim
+plevat_db_user_zain --env SIMPLEVAT_DB_PASSWORD=Gtt@123 --env SIMPLEVAT_HOST=http://simplevat-zain:8080/ --name simplevat-zain --network simplevat-bridge-net
+
+work simplevat:latest
+doskey /history
