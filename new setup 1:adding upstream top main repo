@@ -1,0 +1,44 @@
+
+C:\Users\HP>git --version
+git version 2.24.1.windows.2
+
+C:\Users\HP>cd IdeaProjects
+
+C:\Users\HP\IdeaProjects>cd simplevat-frontend-reactjs.suraj.rahade
+
+C:\Users\HP\IdeaProjects\simplevat-frontend-reactjs.suraj.rahade>git remote -v
+origin  https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade (fetch)
+origin  https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade (push)
+
+C:\Users\HP\IdeaProjects\simplevat-frontend-reactjs.suraj.rahade>git remote add upstream https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade
+
+C:\Users\HP\IdeaProjects\simplevat-frontend-reactjs.suraj.rahade>git remote -v
+origin  https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade (fetch)
+origin  https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade (push)
+upstream        https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade (fetch)
+upstream        https://datainn@dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade (push)
+
+C:\Users\HP\IdeaProjects\simplevat-frontend-reactjs.suraj.rahade>git fetch upstream
+From https://dev.azure.com/datainn/simplevat-frontend-reactjs/_git/simplevat-frontend-reactjs.suraj.rahade
+ * [new branch]        develop    -> upstream/develop
+
+C:\Users\HP\IdeaProjects\simplevat-frontend-reactjs.suraj.rahade>git merge upstream/develop
+Already up to date.
+
+C:\Users\HP\IdeaProjects\simplevat-frontend-reactjs.suraj.rahade>cd ..
+
+C:\Users\HP\IdeaProjects>cd simplevat-backend-java.suraj.rahade.suraj.rahade
+
+C:\Users\HP\IdeaProjects\simplevat-backend-java.suraj.rahade.suraj.rahade>git remote -v
+origin  https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java.suraj.rahade.suraj.rahade (fetch)
+origin  https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java.suraj.rahade.suraj.rahade (push)
+
+C:\Users\HP\IdeaProjects\simplevat-backend-java.suraj.rahade.suraj.rahade>git remote add upstream https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java
+
+C:\Users\HP\IdeaProjects\simplevat-backend-java.suraj.rahade.suraj.rahade>git remote -v
+origin  https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java.suraj.rahade.suraj.rahade (fetch)
+origin  https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java.suraj.rahade.suraj.rahade (push)
+upstream        https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java (fetch)
+upstream        https://datainn@dev.azure.com/datainn/simplevat-backend-java/_git/simplevat-backend-java (push)
+
+C:\Users\HP\IdeaProjects\simplevat-backend-java.suraj.rahade.suraj.rahade>
